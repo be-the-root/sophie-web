@@ -1,0 +1,96 @@
+
+body {
+    background-color: pink;
+    font-family: 'Caveat', cursive, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.notebook {
+    background-color: white;
+    width: 800px;
+    min-height: 600px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    
+   
+    background-image: linear-gradient(#e1e1e1 1px, transparent 1px);
+    background-size: 100% 30px;
+}
+
+
+.margin-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 80px;
+    width: 2px;
+    background-color: #ff9999;
+}
+
+
+h1 {
+    margin-left: 60px;
+    font-size: 42px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-left: 60px;
+    font-size: 22px;
+    color: #666;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+
+.sticky-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+
+.sticky-note {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.15);
+    transform: rotate(-2deg);
+}
+
+.sticky-note:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+.sticky-note h2 {
+    font-size: 24px; 
+    margin-top: 0;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 5px;
+}
+
+.sticky-note.yellow {
+    background-color: #fff68f;
+}
+
+.sticky-note.pink {
+    background-color: #ffb6c1;
+}
+
+.sticky-note.blue {
+    background-color: #afeeee;
+}
+
+.sticky-note.green {
+    background-color: #c1ffc1;
+}
